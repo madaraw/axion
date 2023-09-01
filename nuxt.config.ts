@@ -1,9 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt"],
+  pinia: {
+    autoImports: ["defineStore", "acceptHMRUpdate"],
+  },
   runtimeConfig: {
     BACK4APP_ID: process.env.BACK4APP_ID,
     BACK4APP_REST_KEY: process.env.BACK4APP_REST_KEY,
+  },
+  imports: {
+    dirs: ["./stores"],
   },
   components: [
     {
