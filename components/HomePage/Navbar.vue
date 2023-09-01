@@ -24,11 +24,8 @@
         </div>
       </NuxtLink>
     </div>
-    <div class="w-full flex items-center justify-end space-x-4">
+    <div class="w-full flex items-center justify-end space-x-4 font-semibold text-lg">
       <ul class="flex items-center justify-end space-x-4">
-        <li>
-          <NuxtLink to="/features">Features</NuxtLink>
-        </li>
         <li>
           <NuxtLink to="/pricing">Pricing</NuxtLink>
         </li>
@@ -36,9 +33,9 @@
           <NuxtLink to="/about">About</NuxtLink>
         </li>
       </ul>
-      <div class="flex items-center justify-center space-x-8">
-        <NuxtLink to="/login" class="b border-r-2 border-black">Login</NuxtLink>
-        <button class="btn">Sign Up</button>
+      <div class="flex items-center justify-center space-x-6">
+        <NuxtLink to="/login">Login</NuxtLink>
+        <button @click="navigateTo('/signup')" class="btn">Sign Up</button>
       </div>
     </div>
   </nav>
