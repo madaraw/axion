@@ -1,6 +1,10 @@
 # Axion Task Management App
 
-Axion is a task management app built using Vue 3, Nuxt 3, Tailwind CSS, and powered by Back4App. It allows users to efficiently manage their tasks with a focus on simplicity and usability.
+Axion is a task management app built using <code>Vue 3</code>, <code>Nuxt 3</code>, <code>Tailwind CSS</code>, and powered by Back4App. It allows users to efficiently manage their tasks with a focus on simplicity and usability.
+You can use [this link](axion-phi.vercel.app) For a demo. Use username <code>test</code> & password <code>Vue 3</code> to skip the registration.
+
+## Motivation
+The primary objective of this project is to acquire proficiency in <code>Vue 3</code> and <code>Nuxt 3</code> by actively exploring their features. The project entails implementing <code>CRUD</code> operations and registration functionalities, leveraging various features such as server-side API calls, <code>Pinia</code> for state management, and the incorporation of middlewares to enforce authentication restrictions.
 
 ## Features
 
@@ -8,13 +12,7 @@ Axion is a task management app built using Vue 3, Nuxt 3, Tailwind CSS, and powe
 2. **Task Lists:** Axion provides task lists for today and upcoming days, helping users stay organized.
 3. **User Authentication:** Secure account creation, login, and logout functionality for individual task management.
 
-## Technology Stack
-
-- **Frontend Framework:** Vue 3 and Nuxt 3 for a robust Single Page Application with Server-Side Rendering (SSR).
-- **UI Styling:** Tailwind CSS for a clean and responsive user interface.
-- **Database:** Back4App is used as the database backend, and the app interacts with it through the REST API.
-
-## Installation
+## Quick Start
 
 To run Axion locally, follow these steps:
 
@@ -53,22 +51,16 @@ To run Axion locally, follow these steps:
    # Using pnpm
     pnpm dev
 
-## Demo
-
-Explore a live demo of Axion here: [Axion Demo](https://axion-pjxqzi7b7-walidrachedi-evercamio.vercel.app/)
 
 ## Usage
 
-1. Create an account to get started.
+1. Create an account or use username: test, password: test to login.
+ ![Signup page](https://github.com/madaraw/axion/assets/25234193/47eccb90-cf56-4351-bbaf-b3daa04ae04b)
+
 2. Once logged in, use the top navbar to create tasks.
+   ![Tasks filled](https://github.com/madaraw/axion/assets/25234193/852670ca-1782-4ac5-8f89-282eb5d8b492)
+
 3. You can edit your tasks by clicking on them and delete them by marking them as done using the checkbox.
-
-## Authentication
-
-Axion provides user authentication with login and logout functionality to ensure the security of your tasks.
-
-## Deployment
-
-Axion is deployed using Vercel, making it easy to access and use the app in a production environment.
+   ![Creation form](https://github.com/madaraw/axion/assets/25234193/4a03b5d1-2a36-4d15-9042-b445cc04360d)
 
 If there are any bugs feel free to reach out to me at rachediwalid@yahoo.fr
