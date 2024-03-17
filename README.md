@@ -1,7 +1,7 @@
 # Axion Task Management App
 
 Axion is a task management app built using <code>Vue 3</code>, <code>Nuxt 3</code>, <code>Tailwind CSS</code>, and powered by Back4App. It allows users to efficiently manage their tasks with a focus on simplicity and usability.
-You can use [this link](axion-phi.vercel.app) For a demo. Use username <code>test</code> & password <code>Vue 3</code> to skip the registration.
+You can use [this link](https://axion-phi.vercel.app) For a demo. Use username <code>test</code> & password <code>Vue 3</code> to skip the registration.
 
 ## Motivation
 The primary objective of this project is to acquire proficiency in <code>Vue 3</code> and <code>Nuxt 3</code> by actively exploring their features. The project entails implementing <code>CRUD</code> operations and registration functionalities, leveraging various features such as server-side API calls, <code>Pinia</code> for state management, and the incorporation of middlewares to enforce authentication restrictions.
