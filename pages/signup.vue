@@ -1,8 +1,8 @@
 <template>
-    <div class="flex items-center justify-center h-screen">
+    <div class="flex items-center justify-center">
 
-        <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
-            <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+        <div class="max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+            <div>
                 <h1 class="mb-8 text-3xl text-center font-semibold">Sign up</h1>
                 <form @submit.prevent="handleSubmit">
                     <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" name="name"
@@ -11,13 +11,14 @@
                     <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" name="email"
                         placeholder="Email" v-model="accountInfo.email" required />
 
-                    <input type="password" class="block border border-grey-light w-full p-3 rounded mb-4" name="password"
-                        placeholder="Password" v-model="accountInfo.password" required />
+                    <input type="password" class="block border border-grey-light w-full p-3 rounded mb-4"
+                        name="password" placeholder="Password" v-model="accountInfo.password" required />
                     <input type="password" class="block border border-grey-light w-full p-3 rounded mb-4"
                         name="confirm_password" placeholder="Confirm Password" v-model="accountInfo.confirm_password"
                         required />
                     <p v-if="error" class="my-1 text-red-500 text-center">{{ error }}</p>
-                    <button class="w-full text-center py-3 rounded btn hover:bg-green-dark focus:outline-none my-1">Create
+                    <button
+                        class="w-full text-center py-3 rounded btn hover:bg-green-dark focus:outline-none my-1">Create
                         Account</button>
                 </form>
                 <div class="text-center text-sm text-grey-dark mt-4">

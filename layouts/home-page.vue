@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div class="w-full">
     <HomePageNavbar />
     <slot />
+    <HomePageFooter />
   </div>
 </template>
