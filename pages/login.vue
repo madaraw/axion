@@ -1,15 +1,13 @@
 <template>
     <div class="flex items-center justify-center">
 
-        <div class="max-w-sm mx-auto flex-1 flex flex-col items-center justify-center">
+        <div class="max-w-sm mx-8 lg:mx-auto flex-1 flex flex-col items-center justify-center">
             <div>
-                <div class="mb-8">
-                    <h1 class="text-2xl text-center font-semibold">Login to your account</h1>
-                    <p>Enter your email and password to sign in for this app</p>
-                </div>
+                <h1 class="text-lg font-semibold mb-1">Login to your account</h1>
+                <p class="mb-4 text-sm text-gray-500">Enter your email and password to sign in for this app</p>
                 <form @submit.prevent="handleSubmit">
-                    <input type="text" class="block border border-grey-light w-full p-2 px-4 rounded-xl mb-4"
-                        name="name" placeholder="Username" v-model="accountInfo.username" required />
+                    <input type="text" class="block border border-grey-light w-full p-2 px-4 rounded-xl mb-4" name="name"
+                        placeholder="Username" v-model="accountInfo.username" required />
                     <input type="password" class="block border border-grey-light w-full p-2 px-4 rounded-xl mb-4"
                         name="password" placeholder="Password" v-model="accountInfo.password" required />
                     <p v-if="error" class="my-1 text-red-500 text-center">{{ error }}</p>
@@ -18,9 +16,9 @@
                 </form>
             </div>
 
-            <div class="text-grey-dark mt-6">
+            <div class="text-gray-500 text-sm mt-6 text-center">
                 You don't have an account?
-                <NuxtLink to="/signup" class="font-semibold underline">Sign Up</NuxtLink>.
+                <NuxtLink to="/signup" class="text-black">Sign Up</NuxtLink>.
             </div>
         </div>
     </div>

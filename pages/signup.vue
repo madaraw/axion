@@ -1,42 +1,41 @@
 <template>
-    <div class="flex items-center justify-center">
-
-        <div class="max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+    <div class="flex items-center justify-center bg-white px-4">
+        <div class="max-w-xs w-full">
             <div>
-                <h1 class="mb-8 text-3xl text-center font-semibold">Sign up</h1>
+                <h2 class="mb-1 text-lg font-medium">Create an account</h2>
+                <p class="mb-4 text-sm text-gray-500">Enter your email to sign up for this app</p>
                 <form @submit.prevent="handleSubmit">
-                    <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" name="name"
+                    <input type="text" class="block border border-grey-light w-full p-2 px-4 rounded-xl mb-4" name="name"
                         placeholder="Username" v-model="accountInfo.username" required />
 
-                    <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" name="email"
+                    <input type="text" class="block border border-grey-light w-full p-2 px-4 rounded-xl mb-4" name="email"
                         placeholder="Email" v-model="accountInfo.email" required />
 
-                    <input type="password" class="block border border-grey-light w-full p-3 rounded mb-4"
+                    <input type="password" class="block border border-grey-light w-full p-2 px-4 rounded-xl mb-4"
                         name="password" placeholder="Password" v-model="accountInfo.password" required />
-                    <input type="password" class="block border border-grey-light w-full p-3 rounded mb-4"
+                    <input type="password" class="block border border-grey-light w-full p-2 px-4 rounded-xl mb-4"
                         name="confirm_password" placeholder="Confirm Password" v-model="accountInfo.confirm_password"
                         required />
-                    <p v-if="error" class="my-1 text-red-500 text-center">{{ error }}</p>
-                    <button
-                        class="w-full text-center py-3 rounded btn hover:bg-green-dark focus:outline-none my-1">Create
+                    <p v-if="error" class="mb-3 text-red-500 text-sm">{{ error }}</p>
+                    <button class="w-full text-center py-3 rounded-md bg-black text-white text-sm font-medium">Create
                         Account</button>
                 </form>
-                <div class="text-center text-sm text-grey-dark mt-4">
+                <div class="text-center text-xs text-gray-400 mt-2">
                     By signing up, you agree to the
-                    <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+                    <a class="text-black" href="#">
                         Terms of Service
                     </a> and
-                    <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+                    <a class="text-black" href="#">
                         Privacy Policy
                     </a>
                 </div>
             </div>
 
-            <div class="text-grey-dark mt-6">
+            <div class="text-gray-500 text-sm mt-8 text-center">
                 Already have an account?
-                <NuxtLink to="/login">
+                <NuxtLink to="/login" class="text-black">
                     Log in
-                </NuxtLink>.
+                </NuxtLink>
             </div>
         </div>
     </div>
